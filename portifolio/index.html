@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/548e3b736d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portifolio">Portifolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p> Web Devoleper</p>
+            <h1>Hi, I am  <span>Your Name </span><br>From Country</h1>
+        </div>
+       </div> 
+    </div>
+<!-------------------- About Section -------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                       write about yourself here
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br> Web application development</li>
+                            <li><span>Programming</span><br> Python, Java, C++, JavaScript, HTML, CSS</li>
+                            <li><span>Database</span><br> MySQL, MongoDB</li>
+                            <li><span>Tools</span><br> Git, Docker, Jenkins, Jira</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2014-2019</span><br>Bachelor's degree in Electrical and Electronic Engineering </li>
+                            <li><span>2019-2020</span><br>Internship at the National Telecommunication Corporation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Freelance
+                                Backend
+                                Software
+                                Developer
+                                (Remote)</span><br> 
+                                •Designed and implemented scalable backend solutions for diverse client projects using JavaScript and modern frameworks.<br>
+                                •Developed and maintained server-side applications, ensuring optimized performance and secure architecture.<br>
+                                •Managed databases, including MongoDB and PostgreSQL, to support complex data-driven applications.<br>
+                                •Troubleshot and resolved issues to improve system stability and user experience.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------------------- Services Section -------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-col">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Web application development</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile"></i>
+                <h2>App Development</h2>
+                <p>Mobile application development</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database</h2>
+                <p>Database management</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------portfolio section---------------->
+
+<div id="portifolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you the talented people around the world.
+                        Download the app now and start exploring the world of talent.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3>Online Shop</h3>
+                    <p>Shop online for the best deals and lowest prices. 
+                        You can also sell your products online.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" >
+                <div class="layer">
+                    <h3>Web Development</h3>
+                    <p>Web application development</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+
+<!---------contact section---------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> Your E-mail</p>
+                <p><i class="fas fa-phone"></i> Your Number</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <a href="images/my-cv.pdf" downliad class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form>
+                <input type="text"  name="Name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+                
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+
+    <div class="copyright">
+
+        <p>&copy; 2021. All rights reserved.</p>
+    </div>
+
+
+</div>
+<script>
+    let tablinks = document.getElementsByClassName('tab-links');
+    let tabcontents = document.getElementsByClassName('tab-contents');
+    function opentab(tab){
+        for(let i=0; i<tablinks.length; i++){
+            if(tablinks[i].classList.contains('active-link')){
+                tablinks[i].classList.remove('active-link');
+            }
+        }
+        for(let i=0; i<tabcontents.length; i++){
+            if(tabcontents[i].classList.contains('active-tab')){
+                tabcontents[i].classList.remove('active-tab');
+            }
+        }
+        document.getElementById(tab).classList.add('active-tab');
+        for(let i=0; i<tablinks.length; i++){
+            if(tablinks[i].innerHTML == tab){
+                tablinks[i].classList.add('active-link');
+            }
+        }
+
+        event.currentTarget.classList.add('active-link');
+    }
+    
+</script>
+
+
+<script>
+
+    let sidemenu = document.getElementById('sidemenu');
+
+
+    function openmenu(){
+        sidemenu.style.right = '0';
+
+    }
+    function closemenu(){
+        sidemenu.style.right = '-200px';
+  
+    }
+</script>
+    
+</body>
+</html>
